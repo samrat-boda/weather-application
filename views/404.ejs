@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include("./partials/header.ejs") %>
+
+    <body>
+        <%- include("./partials/navbar.ejs") %>
+
+        <div class="conatiner-fluid main_header">
+            <div class="row">
+                <div class="col-md-10 col-12 mx-auto">
+                    <div class="row">
+                        <!-- main_header_left -->
+                        <div class="col-md-6 col-12 main-header_right align-items-center">
+                            <figure>
+                                <img src="/images/404.jpg" alt="sammmy" class="img-fluid">
+                            </figure>
+                        </div>
+                            <!-- main_header_right -->
+                            <div class="col-md-6 col-12 main-header_left">
+                                <p>Welcome to the SammyWeather</p>
+                                <h1>oops <span class="text_colour"> <%= errMsg %></span>  </h1>
+                                <a href="/"> <button>go back</button> </a>
+                            </div>
+    
+                        </div>
+                </div>
+            </div>
+        </div>
+
+            <%- include("./partials/footer.ejs") %>
+
+    </body>
+
+</html>
